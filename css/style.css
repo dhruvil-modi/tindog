@@ -1,5 +1,8 @@
 body{
     margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
     font-family: "Montserrat", sans-serif;
 }
 /* Title */
@@ -10,7 +13,7 @@ body{
 .container-fluid{
     padding: 3% 15% 3%;
 }
-h1{
+.title-text{
     font-size: 3.5rem;
     line-height: 1.5;
     font-weight: bold;
@@ -52,7 +55,6 @@ h1{
     padding: 7% 4%;
 }
 .feature-title{
-    font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -145,12 +147,13 @@ h1{
 }
 /* Media Query */
 @media (max-width: 1028px){
+    /* Title Section */
     .title-content{
         text-align: center;
     }
-    h1{
+    .title-text{
         font-size: 2.5rem;
-        line-height: 1.1;
+        line-height: 1.3;
         font-weight: bold;
     }
     .title-img{
@@ -160,5 +163,78 @@ h1{
     }
     .download-btn{
         margin: 7% 1%;
+    }
+    /* Testimonial Section */
+    .testimonial-text{
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+    .testimonial-img{
+        width: 25%;
+        border-radius: 100%;
+        margin: 20px;
+    }
+    /* Press Section */
+    .press-img{
+        width: 60%;
+        margin: 5%;
+    }
+    /* Pricing Section */
+    .card{
+        margin: 4% auto;
+    }
+    /* CTA Section */
+    .cta-text{
+        font-size: 2.2rem;
+    }
+    .cta-btn{
+        margin: 7% 1%;
+    }
+    /* Footer Section */
+    .footer-icon{
+        margin-bottom: 4% auto;
+    }
+}
+
+@media (max-width: 600px ){
+    /* Title Section */
+    .title-content{
+        text-align: center;
+    }
+    .title-text{
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+    .download-btn{
+        margin: 3% auto;
+    }
+    /* Testmonial Section */
+    .testimonial-text{
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+    .testimonial-img{
+        width: 50%;
+        border-radius: 100%;
+        margin: 20px;
+    }
+    /* Press Section */
+    .press-img{
+        width: 60%;
+    }
+    /* Pricing Section */
+    .card{
+        margin: 5% auto;
+    }
+    /* CTA Section */
+    .cta-text{
+        font-size: 1.6rem;
+    }
+    .cta-btn{
+        margin: 3% auto;
+    }
+    /* Footer Section */
+    .footer-icon{
+        margin-bottom: 3% auto;
     }
 }
